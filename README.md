@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aesthetic Sri Lankan Driving School
 
 A premium, elegant, modern, responsive full-stack Driving School Management Website specifically designed for the Sri Lankan market.
@@ -108,3 +109,6 @@ Before deploying to a live production server:
 ✅ Public Website Layout & Homepage with Animated stats
 ✅ Admin Dashboard layout with interactive Recharts
 ✅ Postman API Collection
+=======
+# Driving
+>>>>>>> b5dcfb1e8d534f171934d2a9fc6fa9f3f6182083
