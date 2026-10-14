@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "vehicles": "Vehicles",
+    "pricing": "Pricing",
+    "instructors": "Instructors",
+    "contact": "Contact",
+    "book_now": "Book Now"
+  },
+  "hero": {
+    "headline": "Learn to Drive. Drive with Confidence.",
+    "subheading": "Professional driving lessons, experienced instructors and flexible training programs designed for Sri Lankan learners."
+  }
+}

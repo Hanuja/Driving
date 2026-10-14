@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-black font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .animate-rocket-launch {
+    animation: rocketLaunch 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  .animate-screen-glow {
+    animation: screenGlow 2.5s ease-in-out forwards;
+  }
+  
+  .animate-fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+  }
+}
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translate(0, 0) rotate(-45deg) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-5vw, -5vh) rotate(-45deg) scale(1);
+  }
+  40% {
+    transform: translate(-30vw, -30vh) rotate(-45deg) scale(1.2);
+  }
+  100% {
+    transform: translate(-120vw, -120vh) rotate(-45deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes screenGlow {
+  0% { background-color: transparent; backdrop-filter: blur(0px); }
+  30% { background-color: rgba(250, 204, 21, 0.15); backdrop-filter: blur(4px); }
+  70% { background-color: rgba(250, 204, 21, 0.15); backdrop-filter: blur(4px); }
+  100% { background-color: transparent; backdrop-filter: blur(0px); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.95); visibility: hidden; }
+}
